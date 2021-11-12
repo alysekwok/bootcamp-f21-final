@@ -7,6 +7,7 @@ export default {
     index: "/",
     ssr: "/ssr",
     login: "/login",
+    about: "/about",
     app: {
       home: "/app",
     },

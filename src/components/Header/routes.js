@@ -14,6 +14,22 @@ const routes = [
     atEnd: false,
   },
   {
+    name: "About",
+    link: urls.pages.about,
+    auth: false,
+    atEnd: false,
+  },
+  {
+    name: "Adopt",
+    link: urls.pages.app.home,
+    auth: false,
+  },
+  {
+    name: "Admin",
+    link: urls.pages.app.home,
+    auth: false,
+  },
+  {
     name: "Login",
     link: urls.pages.login,
     auth: false,
