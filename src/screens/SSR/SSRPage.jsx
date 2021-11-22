@@ -8,7 +8,7 @@ const SSRPage = ({ message, errorMessage }) => {
     <>
       <h2 className={classes.CenterText}>Welcome to Bits of Good!</h2>
       <h3>
-        This page is server-side rendered, because all API calls are made in
+        This is server-side rendered, because all API calls are made in
         getInitialProps
       </h3>
       {errorMessage == null ? (
