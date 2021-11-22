@@ -7,6 +7,8 @@ export default {
     index: "/",
     ssr: "/ssr",
     login: "/login",
+    ado:'/ado',
+    abo:'/abo',
     app: {
       home: "/app",
     },
