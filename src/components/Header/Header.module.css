@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     padding: 8px 4px;
-    background-color: #004b4b;
+    background-color: #ad4970;
     align-items: center;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .route:hover, .endRoute:hover, .selected {
-    background-color: #002d2d;
+    background-color: #af0f5f;
 }
 
 .endRoute {
