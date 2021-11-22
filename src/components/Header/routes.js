@@ -14,6 +14,24 @@ const routes = [
     atEnd: false,
   },
   {
+    name:'Adopt',
+    link: urls.pages.ado,
+    auth: false,
+    atEnd: false,
+  },
+  {
+    name: 'About',
+    link: urls.pages.abo,
+    auth: false,
+    atEnd: false,
+  },
+  {
+    name:'Admin',
+    link: urls.pages.ssr,
+    auth: false,
+    atEnd: false,
+  },
+  {
     name: "Login",
     link: urls.pages.login,
     auth: false,
