@@ -3,8 +3,17 @@
     align-items: center;
 }
 
-.image{
+.image {
     display:ruby;
     align-items: center;
 
+}
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#pageheader {
+    text-align: center;
 }

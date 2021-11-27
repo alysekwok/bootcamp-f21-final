@@ -2,7 +2,7 @@ import urls from "../../../utils/urls";
 
 const routes = [
   {
-    name: "Home",
+    name: "CatScout",
     link: urls.pages.index,
     auth: false,
     atEnd: false,
@@ -14,22 +14,20 @@ const routes = [
     atEnd: false,
   },
   {
-    name:'Adopt',
-    link: urls.pages.ado,
+    name: "About",
+    link: urls.pages.about,
     auth: false,
     atEnd: false,
   },
   {
-    name: 'About',
-    link: urls.pages.abo,
+    name: "Adopt",
+    link: urls.pages.adopt,
     auth: false,
-    atEnd: false,
   },
   {
-    name:'Admin',
-    link: urls.pages.ssr,
+    name: "Admin",
+    link: urls.pages.admin,
     auth: false,
-    atEnd: false,
   },
   {
     name: "Login",

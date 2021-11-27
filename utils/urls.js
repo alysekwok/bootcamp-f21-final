@@ -7,8 +7,9 @@ export default {
     index: "/",
     ssr: "/ssr",
     login: "/login",
-    ado:'/ado',
-    abo:'/abo',
+    about: "/abo",
+    adopt: "/ado",
+    admin: "/admin",
     app: {
       home: "/app",
     },
