@@ -1,18 +1,11 @@
 import React from "react";
-import classes from "./AdminPage.module.css";
+
+import Search from './search';
 
 const AdminPage = () => {
-    console.log()
-        return (
-        <div >
-            <div className={classes.centertext}>
-                <h1> Admin Page </h1>
-                 <p>Should display a search bar. An admin will enter the name of the animal and return list of adoption applications for that animal</p>
-                  
-            </div>
-          </div>
-      );
-        }
+    return (
+        <Search />
+    );
+}
 
 export default AdminPage;
-
