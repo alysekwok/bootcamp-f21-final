@@ -8,3 +8,17 @@
     align-items: center;
 
 }
+.visuallyhidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.but{
+    align-items: center;
+    border-radius: 160px;
+    color: darkviolet;
+}
