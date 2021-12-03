@@ -22,5 +22,8 @@ export default {
       logout: "/api/user/logout",
       getCurrent: "/api/user/get-current",
     },
+    adopt:{
+      cats: "/api/adopt/cats",
+    }
   },
 };
