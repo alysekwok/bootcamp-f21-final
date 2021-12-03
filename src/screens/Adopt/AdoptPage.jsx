@@ -1,6 +1,7 @@
-
 import style from "./AdoptPage.module.css";
 import React, {useState} from 'react'
+import validator from 'validator'
+import { Error } from "mongoose";
 export default function AdoptPage() {
     const [name,setname]=useState('')
     const [Email,setEmail]=useState('')
@@ -8,7 +9,7 @@ export default function AdoptPage() {
     const [location,setlocation]=useState('')
 
     async function submitHandler(e){
-        e.preventDefault()
+      e.preventDefault()
         const res=await fetch('http://localhost:3000/ssr',{
             method:'POST', 
             headers:{
@@ -22,11 +23,15 @@ export default function AdoptPage() {
                 img:'/image/caty.gif'
             })
         })
-
-
-
+      
     }
-  
+
+        
+
+
+
+    
+
     return (
       <div style={{ 
         backgroundImage: `url(image/cloud.gif)` ,
@@ -41,10 +46,10 @@ export default function AdoptPage() {
            <input className={style.enter} required='true'type="text" onChange={e=>setname(e.target.value)}/></center>
            <center><label className={style.txt}htmlFor="species">
            Email</label>
-           <input className={style.enter}required='true'type="text" onChange={e=>setspecies(e.target.value)}/></center>
+           <input className={style.enter}required='true'type="text" onChange={e=>setphone(e.target.value)}/></center>
            <center><label className={style.txt}htmlFor="description">
            Phone#</label>
-           <input className={style.enter} required='true'type="text" onChange={e=>setdescription(e.target.value)}/></center>
+           <input className={style.enter} required='true'type="text" onChange={e=>setEmail(e.target.value)}/></center>
            <center><label className={style.txt}htmlFor="location">
            Location</label>
            <input className={style.enter} required='true' type="text" onChange={e=>setlocation(e.target.value)}/></center>
