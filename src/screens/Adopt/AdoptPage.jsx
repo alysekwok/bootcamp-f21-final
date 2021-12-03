@@ -1,7 +1,5 @@
 import style from "./AdoptPage.module.css";
 import React, {useState} from 'react'
-import validator from 'validator'
-import { Error } from "mongoose";
 export default function AdoptPage() {
     const [name,setname]=useState('')
     const [Email,setEmail]=useState('')
@@ -10,6 +8,14 @@ export default function AdoptPage() {
 
     async function submitHandler(e){
       e.preventDefault()
+      console.log(phone)
+      if(phone.match(/^[0-9]+$/) == null) {
+        alert("can only contain digits")
+      }
+      if(Email.match(/\S+@\S+\.\S+/) == null) {
+        alert("must be valid email address")
+      }
+      try {
         const res=await fetch('http://localhost:3000/ssr',{
             method:'POST', 
             headers:{
@@ -20,9 +26,11 @@ export default function AdoptPage() {
                 Email:Email,
                 phone:phone,
                 location:location,
-                img:'/image/caty.gif'
             })
         })
+      } catch (e) {
+        alert("Error!")
+      }
       
     }
 
@@ -46,10 +54,10 @@ export default function AdoptPage() {
            <input className={style.enter} required='true'type="text" onChange={e=>setname(e.target.value)}/></center>
            <center><label className={style.txt}htmlFor="species">
            Email</label>
-           <input className={style.enter}required='true'type="text" onChange={e=>setphone(e.target.value)}/></center>
+           <input className={style.enter}required='true'type="text" onChange={e=>setEmail(e.target.value)}/></center>
            <center><label className={style.txt}htmlFor="description">
            Phone#</label>
-           <input className={style.enter} required='true'type="text" onChange={e=>setEmail(e.target.value)}/></center>
+           <input className={style.enter} required='true'type="text" onChange={e=>setphone(e.target.value)}/></center>
            <center><label className={style.txt}htmlFor="location">
            Location</label>
            <input className={style.enter} required='true' type="text" onChange={e=>setlocation(e.target.value)}/></center>
