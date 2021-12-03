@@ -3,18 +3,6 @@ import urls from "../../../utils/urls";
 const routes = [
   {
     name: "CatScout",
-    link: urls.pages.index,
-    auth: false,
-    atEnd: false,
-  },
-  {
-    name: "SSR",
-    link: urls.pages.ssr,
-    auth: false,
-    atEnd: false,
-  },
-  {
-    name: "About",
     link: urls.pages.about,
     auth: false,
     atEnd: false,
