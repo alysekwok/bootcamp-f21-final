@@ -12,7 +12,7 @@ export default function ApplicationCard( {app} ) {
             <p>Phone: {app.phone} </p>
             <p>Email: {app.email} </p>
             <p>Location: {app.location} </p>
-            <button onClick={}>View More</button>
+            <button>View More</button>
         </div>
     )
 }
