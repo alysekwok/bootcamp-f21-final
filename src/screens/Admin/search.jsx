@@ -11,7 +11,10 @@ const SearchBar = () => (
             name="s" 
         />
         <button id={classes.but}type="submit">Search</button>
+        <button id={classes.approve} type='reset'>Approve</button>
+        
     </form>
+    
 );
 
 export default SearchBar;
