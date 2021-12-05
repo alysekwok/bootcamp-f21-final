@@ -1,0 +1,49 @@
+{
+  "cats": [
+    {
+      "id": 1,
+      "name": "Bartholomew",
+      "image": "/image/Bartholomew.jpg",
+      "age": 5,
+      "location": "Cabbagetown",
+      "breed": "Ragdoll",
+      "isAdopted": false
+    },
+    {
+      "id": 2,
+      "name": "Alyse",
+      "image": "/image/Alyse.jpg",
+      "age": 1,
+      "location": "Johns Creek",
+      "breed": "Burmese",
+      "isAdopted": false
+    },
+    {
+      "id": 3,
+      "name": "Harriet",
+      "image": "/image/Harriet.jpg",
+      "age": 3,
+      "location": "Suwon",
+      "breed": "Bombay",
+      "isAdopted": false
+    },
+    {
+      "id": 4,
+      "name": "Ewan",
+      "image": "/image/Ewan.jpg",
+      "age": 2,
+      "location": "Kansas City",
+      "breed": "Bengal",
+      "isAdopted": false
+    },
+    {
+      "id": 5,
+      "name": "Nancy",
+      "image": "/image/Nancy.jpg",
+      "age": 10,
+      "location": "Chino",
+      "breed": "Chartreux",
+      "isAdopted": false
+    }
+  ]
+}

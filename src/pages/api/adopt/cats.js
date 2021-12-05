@@ -1,46 +1,27 @@
-import Cats from "../../server/models/Cats"
+import {findCats} from "../../../../server/mongodb/actions"
 
-const bart = Cats.create({
-    name: "Bartholomew",
-    image: google.com,
-    age: 5,
-    location: "Cabbagetown",
-    breed: "Siamese",
-    isAdopted: false
-})
 
-const bart = Cats.create({
-    name: "Alyse",
-    image: google.com,
-    age: 1,
-    location: "Johns Creek",
-    breed: "Burmese",
-    isAdopted: false
-})
+export const findCatsServerCall = async () => {
+    try {
+      const cat = await findCats()
+      return cat
+    } catch (e) {
+      return {
+        success: false,
+        message: "ruh roh",
+      }
+    }
+  }
 
-const bart = Cats.create({
-    name: "Harriet",
-    image: google.com,
-    age: 3,
-    location: "Suwon",
-    breed: "Bombay",
-    isAdopted: false
-})
+  const handler = (req, res) =>
+  findCatsServerCall().then((payload) => {
+    if (payload.success) res.status(200)
+    else res.status(500)
+    res.json(payload)
+  })
 
-const bart = Cats.create({
-    name: "Ewan",
-    image: google.com,
-    age: 2,
-    location: "Kansas City",
-    breed: "Bengal",
-    isAdopted: false
-})
+export default handler
+  
 
-const bart = Cats.create({
-    name: "Nancy",
-    image: google.com,
-    age: 10,
-    location: "Chino",
-    breed: "Chartreux",
-    isAdopted: false
-})
+
+

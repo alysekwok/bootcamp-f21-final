@@ -8,8 +8,8 @@ export default {
     ssr: "/ssr",
     form:'/form',
     login: "/login",
-    about: "/abo",
-    adopt: "/ado",
+    about: "/about",
+    adopt: "/adopt",
     admin: "/admin",
     app: {
       home: "/app",
@@ -23,5 +23,8 @@ export default {
       logout: "/api/user/logout",
       getCurrent: "/api/user/get-current",
     },
+    adopt:{
+      cats: "/api/adopt/cats",
+    }
   },
 };
