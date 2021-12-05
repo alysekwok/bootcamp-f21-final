@@ -4,7 +4,6 @@ import style from './ApplicationCard.module.css'
 import Link from 'next/Link'
 
 export default function ApplicationCard( {app} ) {
-
     console.log(app)
     return (
         <div className={style.container}>

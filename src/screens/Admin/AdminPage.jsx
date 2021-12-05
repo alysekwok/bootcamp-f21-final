@@ -9,7 +9,7 @@ export default function AdminPage( {apps} ) {
     return (
         <div className={style.mainContainer}>
             <div className = {style.searchContainer}>
-                <Search />
+                <Search/>
             </div>
             <div className = {style.secondContainer}>
             <div className = {style.container}>
@@ -25,6 +25,6 @@ export default function AdminPage( {apps} ) {
                     }
             </div>
         </div>
-            </div>
+        </div>
     );
 }

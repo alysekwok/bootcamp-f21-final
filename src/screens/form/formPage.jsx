@@ -14,12 +14,12 @@ export default function FormPage( {cat} ) {
         alert("Phone can only contain digits")
         return;
       }
-      if(Email.match(/\S+@\S+\.\S+/) == null) {
+      if(email.match(/\S+@\S+\.\S+/) == null) {
         alert("Must be valid email address")
         return;
       }
       try {
-        const res=await fetch('http://localhost:3001/users',{
+        const res=await fetch('http://localhost:3001/applications',{
             method:'POST', 
             headers:{
                 'Content-Type': 'application/json'
@@ -29,6 +29,7 @@ export default function FormPage( {cat} ) {
                 email:email,
                 phone:phone,
                 location:location,
+                appliedCat: cat
             })
         })
         alert("Application was successfully submitted")
@@ -46,17 +47,17 @@ export default function FormPage( {cat} ) {
 
     return (
       <div className={style.backgroundpattern} style={{ 
-        backgroundImage: `url(image/cloud.gif)` ,
+        backgroundImage: `url(/image/cloud.gif)` ,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'top center'
       }}>
-        <div>
+        <div className={style.catcontainer}>
           <Image src= {cat.image} width={200} height={200}/>
           <div className= {style.container}>
-          <p> {cat.name} </p>
-          <p> {cat.age} </p>
-          <p> {cat.location} </p>
-          <p> {cat.breed} </p>
+          <p> Name: {cat.name} </p>
+          <p> Age: {cat.age} </p>
+          <p> Location: {cat.location} </p>
+          <p> Breed: {cat.breed} </p>
           <p>Description: This is a cat.</p>
         </div>
       </div>

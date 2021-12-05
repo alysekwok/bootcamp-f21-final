@@ -88,12 +88,29 @@
       "phone": "1234567890",
       "location": "atlanta",
       "id": 2
-    },    {
+    },
+    {
       "name": "ewan",
       "email": "ewan@gmail.com",
       "phone": "1234567890",
       "location": "atlanta",
       "id": 2
+    },
+    {
+      "name": "sfjsdfs",
+      "email": "slkfjlsf@gmail.com",
+      "phone": "234234234",
+      "location": "efd",
+      "appliedCat": {
+        "id": 1,
+        "name": "Bartholomew",
+        "image": "/image/Bartholomew.jpg",
+        "age": 5,
+        "location": "Cabbagetown",
+        "breed": "Ragdoll",
+        "isAdopted": false
+      },
+      "id": 3
     }
   ]
 }
