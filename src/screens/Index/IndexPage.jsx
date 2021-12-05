@@ -11,7 +11,7 @@ const IndexPage = () => {
                 <h1><img id={classes.pic}src= 'image/giphy.gif'></img>Welcome to CatScout</h1>
                  <h2 id={classes.second}>We provide a channel for pets to be seen and adopted.</h2>
                  <b id={classes.third}>The cat shown on the right is RainMeow, he is the cutest and loves 
-                 to hop around, eat cookies, and blast rainbow waves.</b>
+                 to hop around, eat cookies, and blast rainbow waves. RainMeow needs a home and you can help!</b>
                  
             </div>
             <div className={classes.image}>
