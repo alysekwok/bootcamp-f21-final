@@ -12,4 +12,4 @@ const CatsSchema = new Schema({
     isAdopted: Boolean
 })
 
-export default mongoose.models.Cats ?? mongoose.model("Cat", CatSchema);
+export default mongoose.models.Cats ?? mongoose.model("Cat", CatsSchema);
