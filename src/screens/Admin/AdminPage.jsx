@@ -6,7 +6,6 @@ import Search from './search';
 
 export default function AdminPage( {apps} ) {
     console.log(apps)
-    const[name, setName] = useState("")
     return (
         <div className={style.mainContainer}>
             <div className = {style.searchContainer}>

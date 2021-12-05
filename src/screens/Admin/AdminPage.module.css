@@ -22,13 +22,14 @@
     border-radius: 160px;
     color: darkviolet;
 }
+
 .approve{
     align-items: center;
-<<<<<<< HEAD
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 .searchBar {
     margin: auto;
     max-width: 100%;
@@ -70,6 +71,3 @@
       width: 45%;
       height: auto;
   }
-=======
-}
->>>>>>> ba62e4ba405596feb92bbbedb30ebda0791b9f37
