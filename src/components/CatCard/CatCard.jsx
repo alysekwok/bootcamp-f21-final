@@ -1,17 +1,18 @@
 import React from 'react'
-import Image from 'next/image'
+import Link from 'next/link'
 import style from './CatCard.module.css'
-import Link from 'next/Link'
+import Image from 'next/image'
 
-export default function AnimalCard( {animal}) {
-    console.log(animal)
-    return (
-        <Link href={`browse/${animal.id}`}>
-        <div className={style.container}>
-            <Image src= {animal.img} width={200} height={200}/>
-            <p className="animal-name"> {animal.name} </p>
-            <p> {animal.species} </p>
-        </div>
-        </Link>
+export default function CatCard({bart}) {
+    console.log(bart)
+    return(
+        <Link href={`/app/${bart.id}`}>
+         <div className={style.container}>
+            
+            <p> {bart.name}</p>
+            <p>{bart.location}</p>
+         </div>
+         </Link>
+    
     )
 }
