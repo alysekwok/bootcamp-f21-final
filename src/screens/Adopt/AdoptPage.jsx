@@ -1,6 +1,7 @@
 import style from "./AdoptPage.module.css";
 import CatCard from "../../components/CatCard/CatCard";
 import React, {useState} from 'react'
+
 export default function AdoptPage( {cats} ) {
   console.log(cats)
   return (

@@ -1,8 +1,9 @@
-import style from "./AdoptPage.module.css";
+import Image from 'next/image'
+import style from "./FormPage.module.css";
 import React, {useState} from 'react'
-export default function AdoptPage() {
+export default function FormPage( {cat} ) {
     const [name,setname]=useState('')
-    const [Email,setEmail]=useState('')
+    const [email,setEmail]=useState('')
     const [phone,setphone]=useState('')
     const [location,setlocation]=useState('')
 
@@ -18,14 +19,14 @@ export default function AdoptPage() {
         return;
       }
       try {
-        const res=await fetch('http://localhost:27017/adopt/cats',{
+        const res=await fetch('http://localhost:3001/users',{
             method:'POST', 
             headers:{
                 'Content-Type': 'application/json'
             },
             body:JSON.stringify({
                 name:name,
-                Email:Email,
+                email:email,
                 phone:phone,
                 location:location,
             })
@@ -49,6 +50,16 @@ export default function AdoptPage() {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'top center'
       }}>
+        <div>
+          <Image src= {cat.image} width={200} height={200}/>
+          <div className= {style.container}>
+          <p> {cat.name} </p>
+          <p> {cat.age} </p>
+          <p> {cat.location} </p>
+          <p> {cat.breed} </p>
+          <p>Description: This is a cat.</p>
+        </div>
+      </div>
         <div className={style.formcontainer}>
           <form onSubmit={submitHandler}>
             <h1 className={style.title}><center>~Register For An Animal~</center></h1>
