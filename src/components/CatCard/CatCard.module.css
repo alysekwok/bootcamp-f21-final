@@ -1,7 +1,11 @@
-.container {
+.container{
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
-    border: 2px solid;
-    border-color: gray;
-    margin-bottom: 5px;
+    margin: 10;
+    max-width: 175px;
+    max-height: 300px
+}
+.container>p {
+    word-break:break-all;
 }

@@ -1,3 +1,35 @@
 .centerText {
     text-align: center;
+    align-items: center;
+}
+
+.image {
+    display:ruby;
+    align-items: center;
+
+}
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 900px;
+    margin:auto
+    
+}
+
+#pageheader {
+    text-align: center;
+}
+
+#second{
+    color: dimgray;
+}
+
+#third{
+    color:palevioletred;
+    
+}
+
+#pic{
+    width:40px;
 }

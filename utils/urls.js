@@ -6,6 +6,7 @@ export default {
   pages: {
     index: "/",
     ssr: "/ssr",
+    form:'/form',
     login: "/login",
     about: "/about",
     adopt: "/adopt",

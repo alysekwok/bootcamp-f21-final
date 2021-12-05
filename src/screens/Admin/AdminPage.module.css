@@ -19,17 +19,12 @@
 }
 .but{
     align-items: center;
-    border: 5px solid blueviolet;
     border-radius: 160px;
-    color: blueviolet;
-    background-color:cornsilk;
+    color: darkviolet;
 }
-.but:active{
-    transform: translateY(4px);
-    background-color:white;
-}
-.searchContainer {
+.approve{
     align-items: center;
+<<<<<<< HEAD
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -75,3 +70,6 @@
       width: 45%;
       height: auto;
   }
+=======
+}
+>>>>>>> ba62e4ba405596feb92bbbedb30ebda0791b9f37
