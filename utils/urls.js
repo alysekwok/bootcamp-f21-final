@@ -7,8 +7,8 @@ export default {
     index: "/",
     ssr: "/ssr",
     login: "/login",
-    about: "/abo",
-    adopt: "/ado",
+    about: "/about",
+    adopt: "/adopt",
     admin: "/admin",
     app: {
       home: "/app",
