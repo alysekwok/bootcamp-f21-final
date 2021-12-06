@@ -46,9 +46,9 @@
     max-width: 100%;
   }
   
-  .container {
+  .listcontainer {
     width: 45%;
-    max-height: 500px;
+    max-height: 50rem;
     overflow-y: scroll;
   }
 
@@ -67,7 +67,14 @@
   }
 
   .expandBox {
-      background-color: grey;
+      background-color: pink;
       width: 45%;
       height: auto;
+  }
+
+  .searchContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }

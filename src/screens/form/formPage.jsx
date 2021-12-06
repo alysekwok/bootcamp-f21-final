@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import style from "./FormPage.module.css";
 import React, {useState} from 'react'
+import { padEnd } from 'lodash';
 export default function FormPage( {cat} ) {
     const [name,setname]=useState('')
     const [email,setEmail]=useState('')
@@ -46,13 +47,16 @@ export default function FormPage( {cat} ) {
     
 
     return (
-      <div className={style.backgroundpattern} style={{ 
+      <div>
+        <div className={style.catcontainer} style={{ 
         backgroundImage: `url(/image/cloud.gif)` ,
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'top center'
-      }}>
-        <div className={style.catcontainer}>
+        backgroundPosition: 'top center',
+        width: `100%`
+        }}>
+          <div className={style.catImage}>
           <Image src= {cat.image} width={200} height={200}/>
+          </div>
           <div className= {style.container}>
           <p> Name: {cat.name} </p>
           <p> Age: {cat.age} </p>

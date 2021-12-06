@@ -12,7 +12,7 @@ export default function AdminPage( {apps} ) {
                 <Search/>
             </div>
             <div className = {style.secondContainer}>
-            <div className = {style.container}>
+            <div className = {style.listcontainer}>
             <div className={style.list}>
         {
           apps && apps.map(app => <ApplicationCard app = {app} key = {app.id}/>)

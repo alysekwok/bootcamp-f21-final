@@ -48,55 +48,6 @@
   ],
   "applications": [
     {
-      "name": "John",
-      "email": "john@gmail.com",
-      "phone": "1111111111",
-      "location": "Atlanta, GA",
-      "id": 1
-    },
-    {
-      "name": "ewan",
-      "email": "ewan@gmail.com",
-      "phone": "1234567890",
-      "location": "atlanta",
-      "id": 2
-    },
-    {
-      "name": "ewan",
-      "email": "ewan@gmail.com",
-      "phone": "1234567890",
-      "location": "atlanta",
-      "id": 2
-    },
-    {
-      "name": "ewan",
-      "email": "ewan@gmail.com",
-      "phone": "1234567890",
-      "location": "atlanta",
-      "id": 2
-    },
-    {
-      "name": "ewan",
-      "email": "ewan@gmail.com",
-      "phone": "1234567890",
-      "location": "atlanta",
-      "id": 2
-    },
-    {
-      "name": "ewan",
-      "email": "ewan@gmail.com",
-      "phone": "1234567890",
-      "location": "atlanta",
-      "id": 2
-    },
-    {
-      "name": "ewan",
-      "email": "ewan@gmail.com",
-      "phone": "1234567890",
-      "location": "atlanta",
-      "id": 2
-    },
-    {
       "name": "sfjsdfs",
       "email": "slkfjlsf@gmail.com",
       "phone": "234234234",
@@ -110,7 +61,87 @@
         "breed": "Ragdoll",
         "isAdopted": false
       },
+      "id": 1
+    },
+    {
+      "name": "the rock",
+      "email": "westayhungry@gmail.com",
+      "phone": "1234567890",
+      "location": "veggie tales",
+      "appliedCat": {
+        "id": 1,
+        "name": "Bartholomew",
+        "image": "/image/Bartholomew.jpg",
+        "age": 5,
+        "location": "Cabbagetown",
+        "breed": "Ragdoll",
+        "isAdopted": false
+      },
+      "id": 2
+    },
+    {
+      "name": "stuart little",
+      "email": "chewsdayinnit@yahoo.com",
+      "phone": "83902039320",
+      "location": "london",
+      "appliedCat": {
+        "id": 2,
+        "name": "Alyse",
+        "image": "/image/Alyse.jpg",
+        "age": 1,
+        "location": "Johns Creek",
+        "breed": "Burmese",
+        "isAdopted": false
+      },
       "id": 3
+    },
+    {
+      "name": "mike wazowski",
+      "email": "mwazowski023@monstersinc.com",
+      "phone": "3430938098402",
+      "location": "monstropolis",
+      "appliedCat": {
+        "id": 3,
+        "name": "Harriet",
+        "image": "/image/Harriet.jpg",
+        "age": 3,
+        "location": "Suwon",
+        "breed": "Bombay",
+        "isAdopted": false
+      },
+      "id": 4
+    },
+    {
+      "name": "sun tzu",
+      "email": "suntzu@qqmail.net",
+      "phone": "2342342980",
+      "location": "the art of war",
+      "appliedCat": {
+        "id": 4,
+        "name": "Ewan",
+        "image": "/image/Ewan.jpg",
+        "age": 2,
+        "location": "Kansas City",
+        "breed": "Bengal",
+        "isAdopted": false
+      },
+      "id": 5
+    },
+    {
+      "name": "steve jobs",
+      "email": "stevejobs@gmail.com",
+      "phone": "690492810",
+      "location": "6feetunderrip",
+      "appliedCat": {
+        "id": 5,
+        "name": "Nancy",
+        "image": "/image/Nancy.jpg",
+        "age": 10,
+        "location": "Chino",
+        "breed": "Chartreux",
+        "isAdopted": false
+      },
+      "id": 6
     }
   ]
 }

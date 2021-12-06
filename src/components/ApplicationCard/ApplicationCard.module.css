@@ -1,8 +1,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    border: 2px solid;
-    border-color: gray;
+    border: 5px solid;
+    border-color: pink;
     margin-bottom: 5px;
     width: 350px;
 }
