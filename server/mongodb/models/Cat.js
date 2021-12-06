@@ -3,13 +3,13 @@ import { interopDefault } from "next/dist/server/load-components";
 
 const { Schema } = mongoose;
 
-const CatsSchema = new Schema({
+const CatSchema = new Schema({
     name: String,
-    image: URL,
+    image: String,
     age: Number,
     location: String,
     breed: String,
     isAdopted: Boolean
 })
 
-export default mongoose.models.Cats ?? mongoose.model("Cat", CatsSchema);
+export default mongoose.models.Cat ?? mongoose.model("Cat", CatSchema);

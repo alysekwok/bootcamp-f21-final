@@ -1,9 +1,9 @@
-import {findCats} from "../../../../server/mongodb/actions"
+import {findCat} from "../../../../server/mongodb/actions"
 
 
-export const findCatsServerCall = async () => {
+export const findCatServerCall = async () => {
     try {
-      const cat = await findCats()
+      const cat = await findCat()
       return cat
     } catch (e) {
       return {
@@ -14,7 +14,7 @@ export const findCatsServerCall = async () => {
   }
 
   const handler = (req, res) =>
-  findCatsServerCall().then((payload) => {
+  findCatServerCall().then((payload) => {
     if (payload.success) res.status(200)
     else res.status(500)
     res.json(payload)
