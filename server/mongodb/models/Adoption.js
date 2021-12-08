@@ -26,7 +26,7 @@ const AdoptionSchema = new Schema({
         required: true,
     },
     id: {
-        type: ObjectID,
+        type: String,
         required: true,
     },
     isApproved: {
