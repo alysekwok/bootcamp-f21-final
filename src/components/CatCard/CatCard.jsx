@@ -5,10 +5,9 @@ import Link from 'next/Link'
 
 export default function CatCard( {cat} ) {
     console.log(cat)
-    if(cat.isAdopted == true) {
-        return
-    }
-    return (
+    if(cat.isAdopted == false) {
+
+     return (
             <Link href={`adopt/${cat._id}`}>
             <div className={style.container}>
                 <Image src= {cat.image} width={200} height={200}/>
@@ -17,4 +16,17 @@ export default function CatCard( {cat} ) {
             </div>
             </Link>
     )
-}
+     }
+    else {
+        return (
+           
+            <div className={style.containers}>
+                <Image src= {cat.image} width={200} height={200}/>
+                <p className="animal-name"> {cat.name} </p>
+                <p className="animal-name"> <b>Adopted </b></p>
+                
+            </div>
+            
+        )
+    }
+    }
