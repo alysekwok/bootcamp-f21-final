@@ -1,7 +1,7 @@
 import AdoptPage from "../../screens/Adopt/AdoptPage";
 
 export async function getServerSideProps() {
-    const res = await fetch("http://localhost:3001/cats")
+    const res = await fetch("http://localhost:3000/api/adopt/cats")
     const cats = await res.json()
     
     return {
