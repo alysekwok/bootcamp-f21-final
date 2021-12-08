@@ -1,9 +1,14 @@
 import mongoose from "mongoose";
 import { ObjectID } from "mongodb/node_modules/bson";
+// import Cat from "./Cat"
 
 const { Schema } = mongoose;
 
 const AdoptionSchema = new Schema({ 
+    // cat: {
+        // cat: Cat,
+        // required: true
+    // },
     name: {
         type: String,
         required: true
