@@ -25,6 +25,8 @@ export default {
     },
     adopt:{
       cats: "/api/adopt/cats",
+      application: "/api/adopt/application",
+      submit: "/api/adopt/submit",
     }
   },
 };

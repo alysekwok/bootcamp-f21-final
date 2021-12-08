@@ -3,7 +3,7 @@ import { ObjectID } from "mongodb/node_modules/bson";
 
 const { Schema } = mongoose;
 
-const AdoptionSchema = new Schema({ 
+const ApplicationSchema = new Schema({ 
     name: {
         type: String,
         required: true
@@ -30,4 +30,4 @@ const AdoptionSchema = new Schema({
     }
 });
 
-export default mongoose.models.Adoption ?? mongoose.model("Adoption", AdoptionSchema);
+export default mongoose.models.Application ?? mongoose.model("Application", ApplicationSchema);
