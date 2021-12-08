@@ -7,15 +7,13 @@ import Adoption from "./models/Adoption"
 export async function findCat() {
     await mongoDB()
     const cat = await Cat.find({});
-    console.log(cat)
     return cat
   }
 
   export async function findCatByName(name) {
     await mongoDB()
-    const specificCat = await Cat.find({}).where('name').equals(name);
-    console.log(spcecificCat)
-    return specificCat
+    const cat = await Cat.find({}).where('name').equals(name);
+    return cat
   }
 
 

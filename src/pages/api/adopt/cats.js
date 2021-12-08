@@ -1,4 +1,4 @@
-import {findCat} from "../../../../server/mongodb/actions"
+import {findCat, findCatByName} from "../../../../server/mongodb/actions"
 
 
 
@@ -13,6 +13,7 @@ export const findCatServerCall = async () => {
       }
     }
   }
+
 
   const handler = (req, res) =>
   findCatServerCall().then((payload) => {
