@@ -15,12 +15,14 @@ export const findCatServerCall = async (name) => {
   }
 
 
-  const handler = (req, res) =>
-  findCatServerCall({name : req.query.name }).then((payload) => {
+  const handler = (req, res) => {
+  const name = req.query.name
+  findCatServerCall(name).then((payload) => {
     if (payload.success) res.status(200)
     else res.status(500)
     res.json(payload)
   })
+}
 
 export default handler
   
