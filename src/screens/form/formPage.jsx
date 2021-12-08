@@ -30,7 +30,6 @@ export default function FormPage( {cat} ) {
                 email:email,
                 phone:phone,
                 location:location,
-                appliedCat: cat
             })
         })
         alert("Application was successfully submitted")

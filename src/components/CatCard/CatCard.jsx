@@ -9,9 +9,9 @@ export default function CatCard( {cat} ) {
         return
     }
     return (
-            <Link href={`adopt/${cat._id}`}>
+            <Link href={`adopt/${cat.name}`}>
             <div className={style.container}>
-                <Image src= {cat.image} width={200} height={200}/>
+                <Image src={cat.image} width={200} height={200}/>
                 <p className="animal-name"> {cat.name} </p>
                 <p> {cat.breed} </p>
             </div>
