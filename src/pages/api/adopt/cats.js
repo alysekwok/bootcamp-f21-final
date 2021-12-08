@@ -1,6 +1,7 @@
 import {findCat} from "../../../../server/mongodb/actions"
 
 
+
 export const findCatServerCall = async () => {
     try {
       const cat = await findCat()
