@@ -10,12 +10,11 @@ export async function findCat() {
   return cat
 }
 
-export async function findCatByName(name) {
+export async function findCatByID(id) {
   await mongoDB()
-  const cat = await Cat.find({}).where('name').equals(name);
+  const cat = await Cat.find({}).where('_id').equals(id);
   return cat
 }
-
 
 
 export async function fillForm(name, location, email, phone, id) {

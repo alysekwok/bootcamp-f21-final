@@ -7,7 +7,7 @@ export default function CatCard( {cat} ) {
     console.log(cat)
     if (cat.isAdopted == false) {
      return (
-            <Link href={`adopt/${cat.name}`}>
+            <Link href={`adopt/${cat._id}`}>
             <div className={style.container}>
                 <Image src={cat.image} width={200} height={200}/>
                 <p className="animal-name"> {cat.name} </p>

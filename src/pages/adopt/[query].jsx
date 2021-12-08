@@ -1,6 +1,6 @@
 //import { findCatByName } from "../../../server/mongodb/actions"
 import FormPage from "../../screens/form/formPage"
-import { findCatServerCall } from "../api/adopt/name.js"
+import { findCatServerCall } from "../api/adopt/name"
 
 export async function getServerSideProps(context) {
     /*
