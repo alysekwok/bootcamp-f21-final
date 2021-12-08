@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { interopDefault } from "next/dist/server/load-components";
+
 
 const { Schema } = mongoose;
 
