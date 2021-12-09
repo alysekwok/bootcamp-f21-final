@@ -2,6 +2,7 @@ import Image from 'next/image'
 import style from "./FormPage.module.css";
 import React, {useState} from 'react'
 import { padEnd } from 'lodash';
+
 export default function FormPage( {cat} ) {
     const [name,setname]=useState('')
     const [email,setEmail]=useState('')
@@ -19,24 +20,38 @@ export default function FormPage( {cat} ) {
         alert("Must be valid email address")
         return;
       }
+      let doc1 = {
+        name: name,
+        location: location,
+        email: email,
+        phone: phone,
+        id: cat._id,
+        isApproved: false,
+      }
       try {
-        const res=await fetch('http://localhost:3001/applications',{
-            method:'POST', 
+        /*
+        * tried saving Adoption doc with mongoose save but couldn't figure it out
+        *
+        doc1.save(function(err, doc) {
+          if (err) return console.error(err);
+          console.log("Document inserted successfully");
+        });
+        */
+
+        /*this errors as "Failed to load resource: the server responded with a status of 500 (Internal Server Error)" */
+        const res = await fetch('http://localhost:3000/api/adopt/form', {
+            method: 'POST',
             headers:{
                 'Content-Type': 'application/json'
             },
-            body:JSON.stringify({
-                name:name,
-                email:email,
-                phone:phone,
-                location:location,
-            })
+            body:JSON.stringify(doc1)
         })
+        const content = await res.json();
+        console.log(content)
         alert("Application was successfully submitted")
       } catch (e) {
         alert("Error!")
       }
-      
     }
 
         

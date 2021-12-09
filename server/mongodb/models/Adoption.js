@@ -5,10 +5,6 @@ import { ObjectID } from "mongodb/node_modules/bson";
 const { Schema } = mongoose;
 
 const AdoptionSchema = new Schema({ 
-    // cat: {
-        // cat: Cat,
-        // required: true
-    // },
     name: {
         type: String,
         required: true
